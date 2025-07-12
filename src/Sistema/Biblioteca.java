@@ -57,8 +57,10 @@ public class Biblioteca {
         }
         return filtrados;
     }
+    public List<Libro> getTodosLosLibros() {
+    return libros; 
+}
 
-    // 🔍 Búsqueda rápida por título usando el árbol binario
     public Libro buscarLibroPorTitulo(String titulo) {
         return arbolLibros.buscar(titulo);
     }

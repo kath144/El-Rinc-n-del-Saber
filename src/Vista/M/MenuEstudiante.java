@@ -404,9 +404,9 @@ public class MenuEstudiante extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Por favor escribe el título de un libro.");
         return;
     }
-    // Asegúrate de tener esta variable arriba en tu clase:
+
     if (biblioteca == null) {
-        biblioteca = new Biblioteca(); // solo si no la has creado ya
+        biblioteca = new Biblioteca(); 
     }
 
     Libro resultado = biblioteca.buscarLibroPorTitulo(titulo);

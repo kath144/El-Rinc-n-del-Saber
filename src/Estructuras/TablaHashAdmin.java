@@ -11,10 +11,13 @@ public class TablaHashAdmin {
     }
 
     public boolean agregar(Admin admin) {
-    if (tabla.containsKey(admin.getCorreo())) return false;
+    if (tabla.containsKey(admin.getCorreo())) {
+        return false; 
+    }
     tabla.put(admin.getCorreo(), admin);
     return true;
-}
+    }
+
 
     public Admin buscar(String correo) {
         return tabla.get(correo);

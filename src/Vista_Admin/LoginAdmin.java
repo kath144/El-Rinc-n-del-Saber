@@ -18,7 +18,6 @@ public LoginAdmin(AdminDAO adminDAO) {
     setLocationRelativeTo(null);
 }
 
-// Opcional: constructor vacío para pruebas
 public LoginAdmin() {
     this(new AdminDAO());
 }
@@ -275,14 +274,12 @@ public LoginAdmin() {
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-
-    String correo = txtEmail.getText().trim();
+ String correo = txtEmail.getText().trim();
     String contraseña = new String(txtPassword.getPassword()).trim();
-    System.out.println("Intentando login con: " + correo + " / " + contraseña);
 
     if (adminDAO.login(correo, contraseña)) {
-        JOptionPane.showMessageDialog(this, "Bienvenido");
-        new Menu_Admin(adminDAO).setVisible(true);
+        JOptionPane.showMessageDialog(this, "¡Bienvenido " + correo + "!");
+        new Menu_Admin().setVisible(true); 
         this.dispose();
     } else {
         JOptionPane.showMessageDialog(this, "Correo o contraseña incorrectos.");

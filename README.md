@@ -13,6 +13,7 @@ Aplicación de escritorio educativa desarrollada en Java Swing para la gestión 
   - Árbol binario de búsqueda (ABB)
   - Tablas hash
   - Listas enlazadas
+  - Colecciones
 - **Algoritmo de ordenamiento**: Burbuja
 
 ---

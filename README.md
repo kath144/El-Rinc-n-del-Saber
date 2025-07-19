@@ -42,27 +42,7 @@ Aplicación de escritorio educativa desarrollada en Java Swing para la gestión 
 
 ---
 
-## 📁 Estructura del Proyecto
-El Rincón del Saber/
-├── src/
-│ ├── Algoritmos/
-│ │ └── Burbuja.java
-│ ├── Estructuras/
-│ │ ├── ArbolBinarioBusqueda.java
-│ │ ├── ListaLibros.java
-│ │ └── TablaHashAdmin.java
-│ ├── Modelo/
-│ │ ├── Libro.java
-│ │ └── Admin.java
-│ ├── Sistema/
-│ │ ├── Biblioteca.java
-│ │ └── AdminDAO.java
-│ └── Vista/
-│ └── Interfaces gráficas (no listadas aún)
-├── libros.txt
-├── admins.txt
-├── build.xml
-└── README.md
+
 ## ▶️ Cómo ejecutar el proyecto
 
 1. Abre NetBeans.

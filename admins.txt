@@ -1,2 +1,4 @@
+admin@gmail.com;1234;Administrador General
+JosueT@gmai.com;1234;Josue
 kath@gmail.com;123;kath
 admin@mail.com;1234;Administrador General

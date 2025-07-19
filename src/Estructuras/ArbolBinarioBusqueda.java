@@ -12,7 +12,7 @@ public class ArbolBinarioBusqueda {
     }
 
     private NodoArbol insertarRecursivo(NodoArbol actual, Libro libro) {
-        // ordena por título
+       
         if (actual == null) return new NodoArbol(libro);
 
         if (libro.getTitulo().compareToIgnoreCase(actual.getLibro().getTitulo()) < 0)

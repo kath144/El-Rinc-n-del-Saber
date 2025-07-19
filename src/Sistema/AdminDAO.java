@@ -16,8 +16,8 @@ public class AdminDAO {
     tablaAdmins = new TablaHashAdmin();
     cargarDesdeArchivo();
 
-    if (tablaAdmins.buscar("admin@mail.com") == null) {
-        tablaAdmins.agregar(new Admin("admin@mail.com", "1234", "Administrador General"));
+    if (tablaAdmins.buscar("admin@gmail.com") == null) {
+        tablaAdmins.agregar(new Admin("admin@gmail.com", "1234", "Administrador General"));
         guardarEnArchivo();
     }
 }

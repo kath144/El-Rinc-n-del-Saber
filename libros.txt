@@ -1,0 +1,23 @@
+Harry Potter y la piedra filosofal|JK. Rowling|Juvenil|977-84-15580-97-2|true
+La ladrona de libros|Markus Zusak|Juvenil|978-84-15580-97-2|true
+Percy Jackson y el ladrón del rayo|Rick Riordan|Juvenil|978-84-450-7566-2|true
+Los juegos del hambre|Suzanne Collins|Juvenil|978-84-675-8527-0|false
+Cosmos|Carl Sagan|Ciencia|978-84-206-6462-4|true
+El gen egoísta|Richard Dawkins|Ciencia|978-84-206-7659-7|true
+La realidad oculta|Brian Greene|Ciencia|978-84-460-3632-3|false
+El universo en una cáscara de nuez|Stephen Hawking|Ciencia|978-84-345-9286-3|true
+Sapiens|Yuval Noah Harari|Actualidad|978-84-9066-319-0|false
+21 lecciones para el siglo XXI|Yuval Noah Harari|Actualidad|978-84-17217-67-2|true
+El capital en el siglo XXI|Thomas Piketty|Actualidad|978-84-15939-53-3|false
+Cómo evitar un desastre climático|Bill Gates|Actualidad|978-84-9992-912-0|true
+Factfulness|Hans Rosling|Actualidad|978-84-17241-71-4|true
+Orgullo y prejuicio|Jane Austen|Clásico|978-84-376-0494-7|true
+1984|George Orwell|Clásico|978-84-206-5790-5|false
+Cien años de soledad|Gabriel García Márquez|Clásico|978-84-376-0495-4|true
+Crimen y castigo|Fiódor Dostoyevski|Clásico|978-84-376-2336-8|false
+Don Quijote de la Mancha|Miguel de Cervantes|Clásico|978-84-376-0493-0|true
+Legendary|Stephanie Garber|Juvenil|122222-4444-333-444-44|true
+La Odisea|Homero|Clasico|122-2-23-3-23--2-3|true
+La Divina Comedia |DANTE ALIGHIERI|Clásico|12233-3-3-3-4-4-4|true
+Hamlet|SHAKESPEARE, William|Clásico|2223--4-4-43-3-32|true
+El perfume del Rey|Emily Malhore|Juvenil|2-2-2-2-3-3-4-43-3|true

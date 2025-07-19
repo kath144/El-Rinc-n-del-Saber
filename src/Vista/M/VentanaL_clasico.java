@@ -2,7 +2,9 @@ package Vista.M;
 
 import Modelo.Libro;
 import Sistema.Biblioteca;
+import Sistema.LibroArchivo;
 import java.awt.Font;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -23,6 +25,7 @@ public class VentanaL_clasico extends javax.swing.JFrame {
         respuesta.setLayout(new BoxLayout(respuesta, BoxLayout.Y_AXIS));
         respuesta.setBorder(BorderFactory.createTitledBorder("Resultado de búsqueda"));
         respuesta.setVisible(false);
+        biblioteca = new Biblioteca();
 
 
     }
@@ -244,36 +247,29 @@ public class VentanaL_clasico extends javax.swing.JFrame {
     }//GEN-LAST:event_txtBuscarActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
-        String titulo = txtBuscar.getText().trim();
-
-    if (titulo.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Por favor escribe el título de un libro.");
-        return;
-    }
-    if (biblioteca == null) {
-        biblioteca = new Biblioteca(); 
-    }
-
-    List<Libro> libros = biblioteca.getLibrosPorCategoria(categoriaActual);
-
-    Libro resultado = null;
-    for (Libro l : libros) {
-        if (l.getTitulo().equalsIgnoreCase(titulo)) {
-            resultado = l;
-            break;
+    String titulo = txtBuscar.getText().trim();
+        if (titulo.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Por favor escribe el título de un libro.");
+            return;
         }
-    }
-
-    if (resultado != null) {
-        mostrarInfoLibro(resultado); // Mostrar resultados en el panel
-    } else {
-        JOptionPane.showMessageDialog(this,
-            "No se encontró el libro \"" + titulo + "\" en la categoría \"" + categoriaActual + "\".",
-            "Sin resultados",
-            JOptionPane.WARNING_MESSAGE);
-        respuesta.setVisible(false);
-        respuesta.removeAll();
-    }
+        List<Libro> libros = biblioteca.getLibrosPorCategoria(categoriaActual);
+        Libro resultado = null;
+        for (Libro l : libros) {
+            if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                resultado = l;
+                break;
+            }
+        }
+        if (resultado != null) {
+            mostrarInfoLibro(resultado); 
+        } else {
+            JOptionPane.showMessageDialog(this,
+                "No se encontró el libro \"" + titulo + "\" en la categoría \"" + categoriaActual + "\".",
+                "Sin resultados",
+                JOptionPane.WARNING_MESSAGE);
+            respuesta.setVisible(false);
+            respuesta.removeAll();
+        }
     }//GEN-LAST:event_btnBuscarActionPerformed
     private void mostrarInfoLibro(Libro libro) {
     respuesta.removeAll();

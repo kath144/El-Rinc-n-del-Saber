@@ -10,11 +10,22 @@ public class Biblioteca {
     private ArbolBinarioBusqueda arbolLibros;
 
     public Biblioteca() {
-        libros = new ArrayList<>();
+        libros = LibroArchivo.cargarLibros();
+        if (libros.isEmpty()) {
+            cargarLibrosPorDefecto();
+            LibroArchivo.guardarLibros(libros);
+        }
         arbolLibros = new ArbolBinarioBusqueda();
+        for (Libro libro : libros) {
+            arbolLibros.insertar(libro);
+        }
+    }
+
+    private void cargarLibrosPorDefecto() {
+        libros = new ArrayList<>();
 
         // libros juveniles
-        libros.add(new Libro("Harry Potter y la pieda filosofal", "JK. Rolling", "Juvenil", "977-84-15580-97-2", true));
+        libros.add(new Libro("Harry Potter y la piedra filosofal", "JK. Rowling", "Juvenil", "977-84-15580-97-2", true));
         libros.add(new Libro("La ladrona de libros", "Markus Zusak", "Juvenil", "978-84-15580-97-2", true));
         libros.add(new Libro("Percy Jackson y el ladrón del rayo", "Rick Riordan", "Juvenil", "978-84-450-7566-2", true));
         libros.add(new Libro("Los juegos del hambre", "Suzanne Collins", "Juvenil", "978-84-675-8527-0", false));
@@ -41,27 +52,27 @@ public class Biblioteca {
         libros.add(new Libro("Cien años de soledad", "Gabriel García Márquez", "Clásico", "978-84-376-0495-4", true));
         libros.add(new Libro("Crimen y castigo", "Fiódor Dostoyevski", "Clásico", "978-84-376-2336-8", false));
         libros.add(new Libro("Don Quijote de la Mancha", "Miguel de Cervantes", "Clásico", "978-84-376-0493-0", true));
-
-        // Insertar libros al árbol
-        for (Libro libro : libros) {
-            arbolLibros.insertar(libro);
-        }
     }
 
     public List<Libro> getLibrosPorCategoria(String categoria) {
         List<Libro> filtrados = new ArrayList<>();
         for (Libro libro : libros) {
-            if (categoria.equals("Todos") || libro.getCategoria().equalsIgnoreCase(categoria)) {
+            if (categoria.equalsIgnoreCase("Todos") || libro.getCategoria().equalsIgnoreCase(categoria)) {
                 filtrados.add(libro);
             }
         }
         return filtrados;
     }
+
     public List<Libro> getTodosLosLibros() {
-    return libros; 
-}
+        return libros;
+    }
 
     public Libro buscarLibroPorTitulo(String titulo) {
         return arbolLibros.buscar(titulo);
+    }
+
+    public void guardarCambios() {
+        LibroArchivo.guardarLibros(libros);
     }
 }

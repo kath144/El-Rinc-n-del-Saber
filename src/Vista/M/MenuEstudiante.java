@@ -46,19 +46,15 @@ public class MenuEstudiante extends javax.swing.JFrame {
         btnBuscar = new javax.swing.JToggleButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jToggleButton2 = new javax.swing.JToggleButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1000, 430));
@@ -208,10 +204,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(167, 237, 255));
         jLabel5.setText("Edgar Allan Poe");
 
-        jToggleButton2.setBackground(new java.awt.Color(178, 203, 210));
-        jToggleButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jToggleButton2.setText("Ver Libro");
-
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Img/books/star.jpg"))); // NOI18N
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Img/books/OrgulloyPerjuicio.png"))); // NOI18N
@@ -225,10 +217,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(167, 237, 255));
         jLabel10.setText("Jane Austen");
-
-        jButton6.setBackground(new java.awt.Color(178, 203, 210));
-        jButton6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jButton6.setText("Ver Libro");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(167, 237, 255));
@@ -245,14 +233,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(167, 237, 255));
         jLabel14.setText("Pickover, Clifford A.");
-
-        jButton7.setBackground(new java.awt.Color(178, 203, 210));
-        jButton7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jButton7.setText("Ver Libro");
-
-        jButton8.setBackground(new java.awt.Color(178, 203, 210));
-        jButton8.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jButton8.setText("Ver Libro");
 
         javax.swing.GroupLayout panelContenedorLibrosLayout = new javax.swing.GroupLayout(panelContenedorLibros);
         panelContenedorLibros.setLayout(panelContenedorLibrosLayout);
@@ -271,44 +251,33 @@ public class MenuEstudiante extends javax.swing.JFrame {
                     .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
                         .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGap(30, 30, 30)
+                                .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
+                                .addGap(105, 105, 105)
+                                .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel5))
-                                        .addGap(105, 105, 105)
-                                        .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                                .addGap(6, 6, 6)
-                                                .addComponent(jLabel10))
-                                            .addComponent(jLabel9)))
-                                    .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                        .addGap(22, 22, 22)
-                                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jLabel10))
+                                    .addComponent(jLabel9))
                                 .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
                                         .addGap(128, 128, 128)
                                         .addComponent(jLabel12))
                                     .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                        .addGap(103, 103, 103)
-                                        .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jLabel11)
-                                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(127, 127, 127)
+                                        .addComponent(jLabel11)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabel13))))
-                            .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(59, 59, 59)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(70, 70, 70)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(112, 112, 112)
-                                    .addComponent(jLabel8)))
+                            .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(59, 59, 59)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(70, 70, 70)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(112, 112, 112)
+                                .addComponent(jLabel8))
                             .addGroup(panelContenedorLibrosLayout.createSequentialGroup()
                                 .addGap(680, 680, 680)
                                 .addComponent(jLabel14)))
@@ -345,12 +314,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(jLabel12)
                     .addComponent(jLabel14))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelContenedorLibrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton2)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -519,9 +482,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -539,7 +499,6 @@ public class MenuEstudiante extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JPanel panelContenedorLibros;
     private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
